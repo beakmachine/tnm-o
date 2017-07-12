@@ -14,4 +14,6 @@ Contributors:
  * Rita Faria
  * Fabio Franca
  * Stefan Schulz (Medical University of Graz)
- * Susanne Zabka (University of Freiburg)
+ * Susanne Zabka (University of Freiburg)acy
+ 
+ Legacy repository of this project: http://purl.org/tnmo/
