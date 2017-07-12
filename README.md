@@ -2,11 +2,11 @@
 
 ## The TNM Ontology
 
-*tnm-o* is the abbreviation for and namespace of the **TNM Ontology**. The TNM Ontology represents the TNM Classification of Malignant Tumours (TNM) in description logic (OWL). For more details see: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0106-9. 
+*tnm-o* is the abbreviation for the **TNM Ontology**. The TNM Ontology represents the TNM Classification of Malignant Tumours (TNM) in description logic (OWL). For a detailed report on *tnm-o* see: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0106-9. 
 
-Objective of this project is to represent the complete TNM Classification system in description logic and provide formal transformation rules between versions. Based on this representation, raw data on clinical and pathological findings can be classified automatically by documentation systems and (partially) transformed between versions.
+Objective of this project is to represent the complete TNM Classification system in description logic and provide formal transformation rules between versions. Based on this representation, data on clinical and pathological findings can be classified automatically by documentation systems and (partially) transformed between TNM versions.
 
-*tnm-o* consists of a stack of hierarchical modules:
+*tnm-o* consists of a stack of hierarchically organized modules:
 
  * **BioTop** Toplevel Domain Ontology (https://biotopontology.github.io/) defines the foundational classes and relations for *tnm-o* and thus its underlying ontological framework.
  * **TNM-O**: a hub ontology providing common classes and definitions which are used by all organ-specific modules of *tnm-o*.  TNM-O is the hup in which other modules *can be* loaded depending on the application context.
