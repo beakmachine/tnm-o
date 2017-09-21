@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1501009371360" name="http://purl.org/tnmo/TNM-O" uri="breast.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501009371360" name="duplicate:http://purl.org/tnmo/TNM-O_Pancreas_7.owl" uri="pancreas.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501009371360" name="duplicate:http://purl.org/tnmo/TNM-O_Pancreas_7.owl" uri="pancreas_NEU.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501009371360" name="http://purl.org/tnmo/TNM-O_colorectal_7.owl" uri="colorectal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1501009371360" name="http://purl.org/tnmo/TNM-O_lung_7.owl" uri="lung.owl"/>
+    </group>
+</catalog>

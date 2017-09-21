@@ -1,0 +1,1671 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#"
+     xml:base="http://purl.org/tnmo/TNM-O_Pancreas_7.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:btl2="http://purl.org/biotop/btl2.owl#"
+     xmlns:Pa7="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:tnmoBP="http://purl.org/tnmo/TNM-O_BodyParts.owl#"
+     xmlns:tnmo="http://purl.org/tnmo/TNM-O.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl">
+        <rdfs:comment>A representation of the TNM classification of malignant tumors version 7 for pancreas cancer.</rdfs:comment>
+        <dc:publisher>Institute for Medical Informatics and Biometry, Freiburg</dc:publisher>
+        <dc:contributor>Martin Boeker</dc:contributor>
+        <dc:date>Oct 2, 2017</dc:date>
+        <dc:contributor>Stefan Schulz</dc:contributor>
+        <dc:contributor>Susanne Zabka,Institute for Distance Learning (Medical Informatics), Beuth University of Applied Sciences Berlin, Germany</dc:contributor>
+        <dc:title>TNM-O_Pancreas_7</dc:title>
+        <dc:language>en</dc:language>
+        <owl:versionIRI rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl/1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#hasPart"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isBearerOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isPartOf"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isRepresentedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#projectsOnto -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#represents -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#represents"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Assessment -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Assessment"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#BodyPart -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#CarcinomaInSitu -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#CarcinomaInSitu"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Confined -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Confined"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Confinement -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Confinement"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Invasive -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Metastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#NoAssessment -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NoAssessment"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#NoEvidence -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumor"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregate -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_BodyParts.owl#CeliacTrunk -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_BodyParts.owl#CeliacTrunk"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_BodyParts.owl#Pancreas -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_BodyParts.owl#Pancreas"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_BodyParts.owl#PancreaticLymphNode -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_BodyParts.owl#PancreaticLymphNode"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_BodyParts.owl#SuperiorMesentericArtery -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_BodyParts.owl#SuperiorMesentericArtery"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#CarcinomaInSituOfPancreas -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#CarcinomaInSituOfPancreas">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#CarcinomaInSitu"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cTis"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pTis"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Confined"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT1"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT1"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMoreThan2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMoreThan2cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Confined"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT2"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT2"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#DistantMetastasisOfPancreasTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#DistantMetastasisOfPancreasTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastasisOfPancreasTumor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+                                    <owl:Class>
+                                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O_BodyParts.owl#PancreaticLymphNode"/>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastasisOfPancreasTumor"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastaticRegionalLymphNodeOfPancreasTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_BodyParts.owl#CeliacTrunk"/>
+                                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_BodyParts.owl#SuperiorMesentericArtery"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT4"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT4"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_BodyParts.owl#CeliacTrunk"/>
+                                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_BodyParts.owl#SuperiorMesentericArtery"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Invasive"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT3"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT3"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastasisOfPancreasTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastasisOfPancreasTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Metastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastaticRegionalLymphNodeOfPancreasTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastaticRegionalLymphNodeOfPancreasTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastasisOfPancreasTumor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_BodyParts.owl#PancreaticLymphNode"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastasisOfPancreasTumor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoAssessmentOfPrimaryPancreasTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoAssessmentOfPrimaryPancreasTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cTX"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pTX"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoEvidenceOfPrimaryPancreasTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoEvidenceOfPrimaryPancreasTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#NoEvidence"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT0"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToDistantMetastasis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutDistantMetastasis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutDistantMetastasis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cNX">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7ClinicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoEvidenceOfPrimaryPancreasTumor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoEvidenceOfPrimaryPancreasTumor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMoreThan2cm"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMoreThan2cm"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT4">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cTX">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoAssessmentOfPrimaryPancreasTumor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoAssessmentOfPrimaryPancreasTumor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cTis">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#CarcinomaInSituOfPancreas"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#CarcinomaInSituOfPancreas"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7PathologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToDistantMetastasis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7PathologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pNX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pNX">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7PathologicalClassification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT0 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoEvidenceOfPrimaryPancreasTumor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoEvidenceOfPrimaryPancreasTumor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMoreThan2cm"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMoreThan2cm"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT4">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pTX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pTX">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoAssessmentOfPrimaryPancreasTumor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoAssessmentOfPrimaryPancreasTumor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pTis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pTis">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#CarcinomaInSituOfPancreas"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#CarcinomaInSituOfPancreas"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isIncludedIn"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_BodyParts.owl#Pancreas"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#PrimaryTumor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregate -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isPartOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorAggregate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToDistantMetastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithDistantMetastasis">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToDistantMetastasis"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#DistantMetastasisOfPancreasTumor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToDistantMetastasis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM1"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM1"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutDistantMetastasis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastaticRegionalLymphNodeOfPancreasTumor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN1"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN1"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cNX"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pNX"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutDistantMetastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutDistantMetastasis">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToDistantMetastasis"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#DistantMetastasisOfPancreasTumor"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToDistantMetastasis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM0"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#NotAssessedMalignantAnatomicalStructure"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasPart"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#MetastaticRegionalLymphNodeOfPancreasTumor"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregateAsRelatedToMetastaticRegionalLymphNodes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isRepresentedBy"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN0"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN0"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7ClinicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7ClinicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregate"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7PathologicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7PathologicalClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7PathologicalClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#RepresentationalUnitInPancreasTNM7Classification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#represents"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumor"/>
+                            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorAggregate"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cTX"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cTis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithMetastaticRegionalLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithNoAssessmentOfRegionalLymphNodes"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTumorWithoutMetastaticRegionalLymphNodes"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#CarcinomaInSituOfPancreas"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMax2cm"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#ConfinedPancreasTumorMoreThan2cm"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorInfiltratingCeliacTrunkOrSuperiorMesentericArtery"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#InvasivePancreasTumorNotBeyondCeliacTrunkOrSuperiorMesentericArtery"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoAssessmentOfPrimaryPancreasTumor"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#NoEvidenceOfPrimaryPancreasTumor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pNX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pT4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pTX"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_pTis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cM"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cT"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN0"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cN1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O_Pancreas_7.owl#PancreasTNM7_cNX"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.0.1) http://owlapi.sourceforge.net -->
+

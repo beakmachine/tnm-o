@@ -1,0 +1,1862 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/tnmo/TNM-O.owl#"
+     xml:base="http://purl.org/tnmo/TNM-O.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:tnmo="http://purl.org/tnmo/TNM-O.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://purl.org/tnmo/TNM-O.owl">
+        <owl:versionIRI rdf:resource="http://purl.org/tnmo/TNM-O.owl/1"/>
+        <owl:priorVersion>prototype 0.18, date: 2015-02-25</owl:priorVersion>
+        <dc:publisher>Institute of Medical Biometry and Medical Informatics, University Medical Center Freiburg, Stefan-Meier-Strasse 26, 79104 Freiburg, Germany
+
+Institute of Medical Informatics, Statistics and Documentation, Medical University of Graz, Auenbruggerplatz 2/V , 8036 Graz (Austria)</dc:publisher>
+        <owl:versionInfo>prototype 0.2</owl:versionInfo>
+        <dc:creator>Stefan Schulz, Medical University of Graz, Graz, Austria</dc:creator>
+        <rdfs:comment>A representation of the TNM classification of malignant tumors - hub file. Include organ or organ system specific TNM-O files as necesssary</rdfs:comment>
+        <dc:creator>Martin Boeker, University Medical Center Freiburg, Freiburg, Germany</dc:creator>
+        <dc:creator>Susanne Zabka,Institute for Distance Learning (Medical Informatics), Beuth University of Applied Sciences Berlin, Germany</dc:creator>
+        <dc:date>2017-10-02</dc:date>
+        <dc:creator>Fabio Franca, Department of Informatics, University of Minho, Braga, Portugal</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#hasGranularPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#hasGranularPart"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#isBearerOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#projectsOnto -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#hasSize -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#CollectiveMaterialEntity -->
+
+    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#CollectiveMaterialEntity"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#InformationObject -->
+
+    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#InformationObject"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#ObjectQuality -->
+
+    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#ObjectQuality"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#Process -->
+
+    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#Process"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#Quality -->
+
+    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#Quality"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#StructuredBiologicalEntity -->
+
+    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#StructuredBiologicalEntity"/>
+    
+
+
+    <!-- http://purl.org/biotop/btl2.owl#ValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/biotop/btl2.owl#ValueRegion"/>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalCluster -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalCluster">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#StructuredBiologicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Assessment -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#AssessmentValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#AssessmentValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#AssessmentValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Benign -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Benign">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TissueDignityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#BodyPart -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#BodyPart">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#BodyPortion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#BodyPortion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#BoneOrgan -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#BoneOrgan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CavitatedOrgan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to5 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to6 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to7 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to8 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality1to9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to3"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to5 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to6 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to7 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to8 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality2to9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to3"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to5 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to6 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to7 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to8 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality3to9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4orMore -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4orMore">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to5 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to6 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to7 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to8 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality4to9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to5"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5to6 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5to6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5to7 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5to8 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality5to9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality6 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to6"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality6to7 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality6to7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality6to8 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality6to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality6to9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality7 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality7to8 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7to8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality7to9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality7to9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality8 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality8">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to8"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality8to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality8to9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality8to9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Cardinality9 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Cardinality9">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality2to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality3to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality5to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality6to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality7to9"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality8to9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#CardinalityValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#ValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#CavitatedOrgan -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#CavitatedOrgan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Organ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Confined -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Confined">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#ConfinementValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Confinement -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Confinement">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#ConfinementValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#ConfinementValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#ConfinementValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Differentiation -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Differentiation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#FasciaOrgan -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#FasciaOrgan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SolidOrgan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#GroupOf1to3LymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOf1to3LymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality1to3"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#GroupOf4orMoreLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOf4orMoreLymphNodes">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Cardinality4orMore"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#GroupOfLymphNodes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#CollectiveMaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#hasGranularPart"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#LymphNode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#HeterogeneousAnatomicalCluster -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#HeterogeneousAnatomicalCluster">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalCluster"/>
+        <owl:disjointWith rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganCluster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G1 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G2 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G2">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G3 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G3">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G4 -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_GX -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_GX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Invasive -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Invasive">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#ConfinementValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#LobularOrgan -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#LobularOrgan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SolidOrgan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Lobule -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Lobule">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#LymphNode -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#LymphNode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganComponent"/>
+        <rdfs:comment>FMAID: 5034</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Malignant -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Malignant">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#TissueDignityValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#isBearerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#TissueDignity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#Malignant"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Metastasis -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Metastasis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#MuscleOrgan -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#MuscleOrgan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SolidOrgan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#NoAssessment -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NoAssessment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AssessmentValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#NoEvidence -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#NoEvidence">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AssessmentValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Organ -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Organ">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#OrganCluster -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganCluster">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#AnatomicalCluster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#OrganComponent -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganComponent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#OrganComponentLayer -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganComponentLayer">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#OrganSegment -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganSegment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#OrganSystemSubdivision -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganSystemSubdivision">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#PoorlyDifferentiated -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PoorlyDifferentiated">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#PrimaryTumor -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#PrimaryTumor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RegionOfOrganComponent -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RegionOfOrganComponent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#CardinalOrganPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalArtefact -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalArtefact">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalArtefactPart -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalArtefactPart">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnit -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnit">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM6Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM6Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNMClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM7Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNMClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNM8Classification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNMClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNMClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnitInTNMClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/biotop/btl2.owl#projectsOnto"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size1to2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size1to2cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size2to4cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size2to4cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Size5mmTo1cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Size5mmTo1cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMax5mm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMax5mm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMax2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeMoreThan4cm -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan4cm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Size"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/tnmo/TNM-O.owl#hasSize"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#SizeMoreThan2cm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SizeValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SizeValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#ValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SolidOrgan -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SolidOrgan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#Organ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#SubdivisionOfCardinalOrganPart -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#SubdivisionOfCardinalOrganPart">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#BodyPart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TNMClassification -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TNMClassification">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#RepresentationalArtefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TissueDignity -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TissueDignity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#ObjectQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TissueDignityValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TissueDignityValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#ValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorAggregate -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorAggregate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#MalignantAnatomicalStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorQuality -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorQuality">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#ObjectQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#TumorQualityValueRegion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/biotop/btl2.owl#ValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#Undifferentiated -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#Undifferentiated">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#WallOfOrgan -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#WallOfOrgan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#OrganComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/tnmo/TNM-O.owl#WellDifferentiated -->
+
+    <owl:Class rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated">
+        <rdfs:subClassOf rdf:resource="http://purl.org/tnmo/TNM-O.owl#DifferentiationValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:absolute:TNM-O_pancreas_7#CeliacTrunk">
+        <rdfs:comment>FMAID: 14812</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:absolute:TNM-O_pancreas_7#Pancreas">
+        <rdfs:comment>FMAID: 7198</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:absolute:TNM-O_pancreas_7#SuperiorMesentericArtery">
+        <rdfs:comment>FMAID: 14749</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#GradeOfDifferentiationCannotBeAssessed"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#ModeratelyDifferentiated"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#PoorlyDifferentiated"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Undifferentiated"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#WellDifferentiated"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G1"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G2"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G3"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_G4"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#HistopathologicalGrading_GX"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#Lobule"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#LymphNode"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#OrganComponentLayer"/>
+            <rdf:Description rdf:about="http://purl.org/tnmo/TNM-O.owl#WallOfOrgan"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
